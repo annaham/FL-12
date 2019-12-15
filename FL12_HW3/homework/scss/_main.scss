@@ -1,0 +1,214 @@
+// Write your styles here
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font_one; 
+    background-color: $main_back;
+}
+
+.header{
+       font-family: $font_one; 
+        height: 550px;  
+        border-radius: 0 0 280px 0px;
+       background: $header_img no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: $main_font;
+           
+}
+
+.header-wrap{
+    width: 480px;
+    margin-left:150px;
+
+}
+
+.landing-logo{
+    p{
+   display: inline-block;
+    }
+} 
+
+.landing-logo {
+    span{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.4em;
+    padding-left: 5px;
+    }
+}
+
+.header_heading{
+    font-weight: bold;
+    font-size: 3.5em;
+    position: relative;
+}
+
+.header_heading{
+    &::after{
+    content: "awesome";
+    @extend %back_prop_shared_day;
+    top:77px;
+    left:0;
+    }
+}
+
+.header_text{
+    font-size: 0.7em;
+    line-height: 15px;
+    word-spacing: 0.3em;
+}
+
+.header_text{
+    content: "Let us show you the hidden gems and adventurous trails our place has to offer.\A
+    Our mountains are much less explored than their Slovakian,\A
+    Polish or even Romanian counterparts. Add to that maps in Cyrillic and barely marked routes,\A
+    and you are up for a true adventure!";
+    white-space: pre-line;
+    } 
+
+.section_text{
+    color: $main_font;
+}    
+
+.section_text{
+    &::after{
+    content: "adventure";
+    @extend %back_prop_shared_day;
+    top:10px;
+    left:179px;
+    }
+}
+
+.header_button{ 
+    @include button_color($btn_clr);
+    @include button_prop;
+}
+
+.section_banner_button{
+    @extend .header_button;
+}
+  
+.login{
+    margin-left: 150px;
+}
+
+body {
+    a{
+        &:link, &:hover, &:active, &:visited{
+    @include link($wht_font);
+        }
+    }   
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font_section;
+}
+
+.section_text{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+ .section_card{
+    background: map-get($font-colour, box_back ); 
+    width: 940px;
+    height: 250px;
+    margin:30px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.section_card {
+    img{
+    width: 45%;
+    height: 85%;
+    padding: 15px;
+    }
+}
+
+.section_card_right_container{
+    width: 60%;
+    color: $wht-font;
+    text-align: center;
+    padding: 0 100px ;
+}
+
+.section_card_right_container {
+    p{
+    margin-bottom: 30px;
+    }
+}
+
+.section_card_heading{
+    font-weight: bold;
+    font-size: 1em;
+    padding-top:20px;
+}
+
+.section_card_text{
+    font-size: 0.7em;
+    text-align: justify;
+}
+.section_banner{
+    display: flex;
+    background: linear-gradient(to right, $btn_clr, $word_back);
+    width: 900px;
+    height: 110px;
+    margin-top: 60px;
+    border-radius: 5px;
+    position: absolute;
+    z-index:100;
+    bottom:-870px;
+}
+
+.section_banner_heading{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-left:70px;
+    position: relative;
+    color: $main_font;
+}
+
+.section_banner_heading{
+    &::after{
+    content: "start";
+    @extend %back_prop_shared_day;
+    top:7px;
+    left:171px;
+    }
+}
+
+.section_banner_text{
+    padding-left:70px;
+    color: $wht-font;
+    font-size: 0.7em;
+}
+.section_banner_button{
+    margin: 50px 100px 50px 300px;
+}
+
+.footer{
+    background: map-get($font-colour, box_back);
+    font-family: $font_footer;
+    color:white;
+    height: 200px;
+    margin-top:100px;
+}
+
+.footer_logo, .footer_text, .footer-cr{
+    float: left;
+    width: 23.5%;
+    padding: 80px 80px 0 60px;
+}
+
+.footer-cr{
+    margin-top: 16px;
+    text-align: center;
+}

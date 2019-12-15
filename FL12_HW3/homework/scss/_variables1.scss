@@ -1,0 +1,44 @@
+$header_img: url(../img/m-h-day.jpg);
+$font_one: "Source Sans Pro", sans-serif;
+
+%back_prop_shared_day{
+    background-color: rgb(36, 156, 192);
+    line-height: 1em;
+    position: absolute;
+}
+
+$word_back: rgb(36, 156, 192);
+
+$btn_clr: rgb(101, 175, 17);
+
+@mixin button_color($property){
+    background-color: $property;
+}
+@mixin button_prop{
+    margin-top: 20px;
+  width: 80px;
+  height: 30px;
+  color: white;
+  border: none;
+}
+$main_back:white;
+$main_font:black;
+
+$wht_font: white;
+$font_section: "Hind", sans-serif;
+
+$font-colour: (
+    box_back: rgba(2, 1, 10, 0.886)
+    );
+
+$imgwidth: 300px;
+$imgheight: 220px;
+
+$font_footer: "Fresca", sans-serif;
+
+
+
+@mixin link($link_color){
+        color: $link_color;
+}
+

@@ -1,0 +1,46 @@
+
+$header_img: url(../img/m-h-night.jpg);
+$font_one: "Source Sans Pro", sans-serif;
+
+%back_prop_shared_day{
+    background-color: rgb(235, 81, 64);
+    line-height: 1em;
+    position: absolute;
+}
+    $word_back: rgb(235, 81, 64);
+
+$main_back:rgba(13, 14, 29, 0.906);
+$main-font:white;
+$btn_clr: rgb(255, 225, 0);
+
+@mixin button_color($property){
+    background-color: $property;
+}
+@mixin button_prop{
+    margin-top: 20px;
+  width: 80px;
+  height: 30px;
+  color: white;
+  border: none;
+}
+
+$wht_font:white;
+$font_section: "Hind", sans-serif;
+
+$font-colour: (
+    box_back: rgba(52, 56, 71, 0.705)
+    );
+
+
+$whitefont: white;
+$imgwidth: 300px;
+$imgheight: 220px;
+
+$font_section: "Hind", sans-serif;
+$font_footer: "Fresca", sans-serif;
+
+@mixin link($link_color){
+        color: $link_color;
+}
+
+

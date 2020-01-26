@@ -1,0 +1,30 @@
+/* Todo: your styles go here*/
+
+ul {
+    list-style-type: none;
+}
+.folder:hover, .file:hover {
+	background-color: lightgrey;
+}
+
+.closed {
+    display: none;
+}
+.open {
+    display: block;
+}
+.material-icons {
+    vertical-align: bottom;
+}
+.empty_folder {
+    font-style: italic;
+}
+.folder i {
+    color: orange;
+}
+.file i {
+    color: grey;
+}
+.empty_folder, .folder, .file {
+    cursor: pointer;
+}

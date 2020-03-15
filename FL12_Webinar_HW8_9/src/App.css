@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+ }
+
+.header, .footer{
+    height: 8vh;
+    width: 100%;
+    padding: 20px 100px;
+}
+
+.course-thumbnail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses{
+    height: 85vh;
+    width: 90%;
+    background-color: lightgray;
+}
+
+.list{
+    list-style: none;
+    padding:10px 20px;
+    
+}
+
+.list li{
+    background-color: white;
+    height: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.courses{
+    height: 80vh;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.course-date{
+    flex: 0.5;
+}
+
+.course-name{
+    flex:2;
+}
+.course-desription{
+    flex: 4;
+}
+
+.course-duration{
+    flex:2;
+}
+
+.course-container{
+    flex: 0.5;
+    border: none;
+}
+
+.actions, .form{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px 10px 20px;
+}
+
+.actions > input{
+    flex-basis: 85%;
+}
+
+.buttonAdd{
+    background-color: rgb(52, 168, 214); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  flex-basis: 5%;
+}
+
+.border-rad{
+    border-radius: 10px;
+}
